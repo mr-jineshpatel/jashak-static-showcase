@@ -1,0 +1,327 @@
+/* ==================================================
+CTA SECTION
+Reusable background-image call to action.
+================================================== */
+
+.cta-section{
+    position:relative;
+    overflow:hidden;
+    padding:86px 0;
+    background-color:var(--secondary-color);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family:var(--body-font);
+    isolation:isolate;
+}
+
+.cta-section::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-2;
+    background:linear-gradient(90deg, rgba(11,18,32,.84), rgba(11,18,32,.58));
+}
+
+.cta-section::after{
+    content:"";
+    position:absolute;
+    right:-80px;
+    top:-100px;
+    z-index:-1;
+    width:320px;
+    height:320px;
+    border:42px solid rgba(255,255,255,.06);
+    border-radius:50%;
+    animation:ctaRingSpin 26s linear infinite;
+}
+
+.cta-section .row{
+    row-gap:28px;
+}
+
+.cta-title{
+    max-width:760px;
+    color:#fff;
+    font-size:38px;
+    font-weight:var(--fw-800);
+    line-height:1.14;
+    margin-bottom:16px;
+}
+
+.cta-title h1,
+.cta-title h2,
+.cta-title h3,
+.cta-title h4,
+.cta-title h5,
+.cta-title h6,
+.cta-title p{
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    line-height:inherit;
+    margin:0;
+}
+
+.cta-title span,
+.cta-title strong{
+    color:#8fc2ff;
+}
+
+.cta-subtitle{
+    max-width:680px;
+    color:rgba(255,255,255,.82);
+    font-size:var(--fs-16);
+    line-height:var(--lh-paragraph);
+    margin:0;
+}
+
+.cta-button-group{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:16px;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.cta-section .theme-btn-secondary{
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+}
+
+.cta-section .theme-btn-secondary:hover{
+    border-color:var(--primary-color);
+    background:var(--primary-color);
+}
+
+.cta-button-group .cta-button1,
+.cta-button-group .cta-button2{
+    min-width:200px !important;
+    }   
+
+
+
+@keyframes ctaRingSpin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media(max-width:991px){
+    .cta-section{
+        padding:70px 0;
+    }
+
+    .cta-title{
+        font-size:32px;
+    }
+
+    .cta-button-group{
+        justify-content:flex-start;
+    }
+}
+
+@media(max-width:575px){
+    .cta-section{
+        padding:58px 0;
+    }
+
+    .cta-title{
+        font-size:26px;
+    }
+
+    .cta-button-group{
+        align-items:stretch;
+        flex-direction:column;
+    }
+
+    .cta-button-group .quote-btn,
+    .cta-button-group .theme-btn{
+        width:100%;
+    }
+}
+
+/* ==================================================
+CTA SECTION TWO
+Distinct animated glass CTA.
+================================================== */
+
+.cta-section-two{
+    position:relative;
+    overflow:hidden;
+    padding:110px 0;
+    background-color:var(--secondary-color);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    isolation:isolate;
+}
+
+.cta-section-two::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-3;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(13,110,253,.42), transparent 28%),
+        linear-gradient(120deg, rgba(11,18,32,.92), rgba(11,18,32,.62));
+}
+
+.cta-section-two::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-2;
+    background-image:
+        linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px);
+    background-size:48px 48px;
+    animation:ctaTwoGrid 18s linear infinite;
+}
+
+.cta-section-two__orbit{
+    position:absolute;
+    right:8%;
+    top:50%;
+    z-index:-1;
+    width:260px;
+    height:260px;
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:50%;
+    transform:translateY(-50%);
+    animation:ctaRingSpin 24s linear infinite;
+}
+
+.cta-section-two__orbit::before,
+.cta-section-two__orbit::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    background:#fff;
+}
+
+.cta-section-two__orbit::before{
+    width:10px;
+    height:10px;
+    left:50%;
+    top:-5px;
+}
+
+.cta-section-two__orbit::after{
+    width:7px;
+    height:7px;
+    right:14%;
+    bottom:12%;
+    opacity:.6;
+}
+
+.cta-section-two__card{
+    display:grid;
+    grid-template-columns:minmax(0, 1fr) auto;
+    gap:40px;
+    align-items:center;
+    padding:46px;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:var(--radius-lg);
+    background:rgba(255,255,255,.1);
+    box-shadow:0 30px 90px rgba(0,0,0,.28);
+    backdrop-filter:blur(12px);
+}
+
+.cta-section-two__title{
+    max-width:760px;
+    color:#fff;
+    font-size:38px;
+    font-weight:var(--fw-800);
+    line-height:1.14;
+    margin-bottom:14px;
+}
+
+.cta-section-two__title h1,
+.cta-section-two__title h2,
+.cta-section-two__title h3,
+.cta-section-two__title h4,
+.cta-section-two__title h5,
+.cta-section-two__title h6,
+.cta-section-two__title p{
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    line-height:inherit;
+    margin:0;
+}
+
+.cta-section-two__title span,
+.cta-section-two__title strong{
+    color:#8fc2ff;
+}
+
+.cta-section-two__subtitle{
+    max-width:680px;
+    color:rgba(255,255,255,.82);
+    font-size:var(--fs-16);
+    line-height:var(--lh-paragraph);
+    margin:0;
+}
+
+.cta-section-two__actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+@keyframes ctaTwoGrid{
+    from{
+        background-position:0 0, 0 0;
+    }
+    to{
+        background-position:48px 48px, 48px 48px;
+    }
+}
+
+@media(max-width:991px){
+    .cta-section-two{
+        padding:80px 0;
+    }
+
+    .cta-section-two__card{
+        grid-template-columns:1fr;
+        padding:36px;
+    }
+
+    .cta-section-two__title{
+        font-size:32px;
+    }
+
+    .cta-section-two__actions{
+        justify-content:flex-start;
+    }
+}
+
+@media(max-width:575px){
+    .cta-section-two{
+        padding:62px 0;
+    }
+
+    .cta-section-two__card{
+        padding:28px 22px;
+    }
+
+    .cta-section-two__title{
+        font-size:26px;
+    }
+
+    .cta-section-two__actions{
+        align-items:stretch;
+        flex-direction:column;
+    }
+
+    .cta-section-two__actions .quote-btn,
+    .cta-section-two__actions .theme-btn{
+        width:100%;
+    }
+}

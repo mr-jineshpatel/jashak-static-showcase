@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Petroleum Refinery</title>
+  <desc id="desc">Original line icon showing refinery towers and pipeline.</desc>
+  <path d="M18 78h60" stroke="#0b1220" stroke-width="4" stroke-linecap="round"/>
+  <path d="M25 78V34h18v44M53 78V22h18v56" stroke="#0d6efd" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M22 34h24M50 22h24M29 43h10M29 53h10M29 63h10M57 32h10M57 42h10M57 52h10M57 62h10" stroke="#0b1220" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13 61h12M43 61h10M71 61h12" stroke="#0d6efd" stroke-width="4" stroke-linecap="round"/>
+  <path d="M58 16c2.8-5.7 7.3-8.5 13.4-8.5 5 0 9.1 1.9 12.6 5.6" stroke="#0b1220" stroke-width="4" stroke-linecap="round"/>
+  <path d="M14 23c6.7-3.8 14-3.8 22 0" stroke="#0d6efd" stroke-width="4" stroke-linecap="round"/>
+  <path d="M13 78c0-7 4.2-10.5 12.6-10.5S38.2 71 38.2 78" stroke="#0b1220" stroke-width="3" stroke-linecap="round"/>
+</svg>

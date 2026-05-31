@@ -1,0 +1,15 @@
+/***********404 error page***************/
+.not-found {    padding: 0px 0 110px;    text-align: center;    color: #fff;    width: 100%;    float: left;    margin-bottom: 0px;    font-size: 20px;    text-transform: uppercase;    font-weight: 700;	background:#F5F8FE;}
+
+@media(min-width:768px){
+.not-found .not-four {    display: block;    font-size: 250px;    line-height: 1.2;    color: #0052DA !important;    font-weight: 900;    text-shadow: 1px 19px 46px rgba(0,0,0,0.4);    padding: 90px 0 0;    font-family: 'Inter', sans-serif;}
+}
+
+@media(max-width:767px){
+.not-found .not-four {    font-size: 140px;	 color: #0052DA !important;}
+}
+
+.not-found h1 {    color: #253041 !important;	    line-height: 1.2;    font-weight: 700;	font-family: 'Inter', sans-serif;}
+body.error404 .page-content p {    margin-bottom: 20px;    font-size: 16px;    line-height: 1.8;	 font-family: 'Inter', sans-serif;}
+.not-found  p, .error-404  a {    color: #222;    font-size: 16px;    text-transform: uppercase;    display: block;    padding-top: 20px;	text-decoration:none;	 font-family: 'Inter', sans-serif;}
+.error-404 a:hover {    color: #0052da;}

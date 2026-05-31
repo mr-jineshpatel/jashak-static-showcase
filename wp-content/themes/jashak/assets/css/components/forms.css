@@ -1,0 +1,265 @@
+/* ==================================================
+CONTACT FORM 7
+================================================== */
+
+.contact-form-wrap{
+	display:flex;
+	flex-wrap:wrap;
+	gap:20px;
+}
+
+.contact-form-wrap .form-group{
+	width:100%;
+}
+
+.contact-form-wrap .half-field{
+	width:calc(50% - 10px);
+}
+
+.contact-form-wrap .full-field,
+.contact-form-wrap .submit-field{
+	width:100%;
+}
+
+/* ==================================================
+FIELDS
+================================================== */
+
+.contact-form-wrap .form-control,
+.contact-form-wrap select.form-control:not([size]):not([multiple]) {
+	width:100%;
+	height:58px;
+	padding:0 20px;
+	border:1px solid #d9e2f2;
+	border-radius:12px;
+	background:#fff;
+	font-size:15px;
+	font-weight:500;
+	color:#111;
+	transition:.3s ease;
+	outline:none;
+	box-shadow:none;
+}
+
+
+.contact-form-wrap select.form-control:not([size]):not([multiple]) {
+    color: #8a97a8;
+}
+
+.contact-form-wrap textarea.form-control{
+	height:100px;
+	padding:18px 20px;
+	resize:none;
+}
+
+/* ==================================================
+FOCUS EFFECT
+================================================== */
+
+.contact-form-wrap .form-control:focus{
+	border-color:var(--primary-color);
+	box-shadow:0 0 0 4px rgba(13,110,253,0.10);
+}
+
+/* ==================================================
+PLACEHOLDER
+================================================== */
+
+.contact-form-wrap .form-control::placeholder{
+	color:#8b95a7;
+	font-weight:400;
+}
+
+/* ==================================================
+SELECT FIELD
+================================================== */
+
+.contact-form-wrap select.form-control{
+	cursor:pointer;
+	appearance:none;
+
+	background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230d6efd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+	background-repeat:no-repeat;
+	background-position:right 18px center;
+	background-size:14px;
+}
+
+/* ==================================================
+SUBMIT BUTTON
+================================================== */
+
+.contact-form-wrap .cf7-submit{
+	border:none;
+	cursor:pointer;
+	min-width:220px;
+}
+
+/* ==================================================
+CF7 RESPONSE
+================================================== */
+
+.wpcf7 form .wpcf7-response-output{
+	margin:25px 0 0;
+	padding:14px 18px;
+	border-radius:10px;
+	font-size:14px;
+}
+
+.wpcf7-not-valid-tip{
+	font-size:13px;
+	margin-top:6px;
+	color:#dc3545;
+}
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media(max-width:767px){
+
+	.contact-form-wrap .half-field{
+		width:100%;
+	}
+
+	.contact-form-wrap .cf7-submit{
+		width:100%;
+	}
+}
+
+
+/* ==================================================
+FAQ SIDEBAR FORM
+================================================== */
+
+.home-faq-form{
+    position:sticky;
+    top:130px;
+    padding:34px;
+    border-radius:var(--radius-lg);
+    background:var(--secondary-color);
+    box-shadow:var(--shadow-lg);
+}
+
+.home-faq-form,
+.home-faq-form p,
+.home-faq-form label{
+    color:#fff;
+}
+
+.home-faq-form .contact-form-wrap{
+    gap:10px;
+}
+
+.home-faq-form .contact-form-wrap h5{
+    width:100%;
+    color:#fff;
+    font-size:var(--fs-24);
+    font-weight:var(--fw-800);
+    line-height:1.25;
+    margin:0 0 6px;
+}
+
+.home-faq-form .contact-form-wrap > p{
+    width:100%;
+    color:rgba(255,255,255,.76);
+    font-size:var(--fs-15);
+    line-height:1.7;
+    margin:0 0 12px;
+}
+
+.home-faq-form .form-group,
+.home-faq-form .form-group p,
+.home-faq-form .submit-field{
+    margin:0;
+}
+
+.home-faq-form .form-control, 
+.home-faq-form .wpcf7-form-control:not(.wpcf7-submit), 
+.home-faq-form select.form-control:not([size]):not([multiple]) {
+    width: 100%;
+    min-height: 52px;
+    margin: 0;
+    padding: 13px 16px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: var(--radius-sm);
+    background: rgba(255,255,255,.08);
+    color: #8994a5;
+    outline: none;
+}
+
+.home-faq-form .form-control:focus,
+.home-faq-form .wpcf7-form-control:not(.wpcf7-submit):focus{
+    border-color:rgba(255,255,255,.34);
+    box-shadow:0 0 0 4px rgba(13,110,253,.16);
+}
+
+.home-faq-form select.form-control,
+.home-faq-form .wpcf7-select{
+    appearance:none;
+    padding-right:40px;
+    background-image:
+        linear-gradient(45deg, transparent 50%, rgba(255,255,255,.82) 50%),
+        linear-gradient(135deg, rgba(255,255,255,.82) 50%, transparent 50%);
+    background-position:
+        calc(100% - 18px) 50%,
+        calc(100% - 12px) 50%;
+    background-size:6px 6px, 6px 6px;
+    background-repeat:no-repeat;
+}
+
+.home-faq-form select option{
+    background:var(--secondary-color);
+    color:#fff;
+}
+
+.home-faq-form textarea.form-control,
+.home-faq-form .wpcf7-textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+.home-faq-form input::placeholder,
+.home-faq-form textarea::placeholder{
+    color:rgba(255,255,255,.68);
+}
+
+.home-faq-form .cf7-submit,
+.home-faq-form .wpcf7-submit{
+    margin-top:4px;
+}
+
+.home-faq-form .wpcf7-spinner{
+    margin:0 0 0 10px;
+    vertical-align:middle;
+}
+
+.home-faq-form .wpcf7-not-valid-tip{
+    color:#ffd7d7;
+    font-size:13px;
+    margin-top:4px;
+}
+
+.home-faq-form .wpcf7-response-output{
+    margin:14px 0 0;
+    padding:10px 12px;
+    border-radius:var(--radius-sm);
+    color:#fff;
+    font-size:14px;
+}
+
+@media(max-width:991px){
+    .home-faq-form{
+        position:relative;
+        top:auto;
+    }
+}
+
+@media(max-width:767px){
+    .home-faq-form{
+        padding:24px;
+        border-radius:var(--radius-md);
+    }
+}
+
+

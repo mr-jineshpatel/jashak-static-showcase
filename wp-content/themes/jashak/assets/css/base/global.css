@@ -1,0 +1,208 @@
+/*==================================================
+CONTAINER
+==================================================*/
+
+.container{
+    width:92%;
+
+    max-width:var(--container-width);
+
+    margin:auto;
+}
+
+
+/*==================================================
+SECTION
+==================================================*/
+
+section{
+    position:relative;
+
+    padding:var(--section-space) 0;
+}
+
+
+/*==================================================
+COMMON UTILITIES
+==================================================*/
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.position-relative{
+    position:relative;
+}
+
+
+/*==================================================
+DISPLAY UTILITIES
+==================================================*/
+
+.d-flex{
+    display:flex;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+
+/*==================================================
+SPACING UTILITIES
+==================================================*/
+
+.mb-0{
+    margin-bottom:0 !important;
+}
+
+.mt-0{
+    margin-top:0 !important;
+}
+
+.pt-0{
+    padding-top:0 !important;
+}
+
+.pb-0{
+    padding-bottom:0 !important;
+}
+
+
+/*==================================================
+IMAGE UTILITIES
+==================================================*/
+
+.img-cover{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+
+/*==================================================
+BACKGROUND UTILITIES
+==================================================*/
+
+.bg-light{
+    background:var(--light-bg);
+}
+
+.bg-primary{
+    background:var(--primary-color);
+}
+
+.bg-dark{
+    background:var(--secondary-color);
+}
+
+
+/*==================================================
+SCREEN READER
+==================================================*/
+
+.screen-reader-text{
+    border:0;
+
+    clip:rect(1px, 1px, 1px, 1px);
+
+    clip-path:inset(50%);
+
+    height:1px;
+
+    width:1px;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    padding:0;
+
+    position:absolute !important;
+
+    word-wrap:normal !important;
+}
+
+.screen-reader-text:focus{
+    background:var(--white-color);
+
+    border-radius:var(--radius-sm);
+
+    box-shadow:var(--shadow-sm);
+
+    clip:auto !important;
+
+    clip-path:none;
+
+    color:var(--primary-color);
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    height:auto;
+
+    width:auto;
+
+    left:10px;
+
+    top:10px;
+
+    line-height:normal;
+
+    padding:12px 18px;
+
+    z-index:100000;
+}
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:991px){
+
+    section{
+        padding:var(--section-space-md) 0;
+    }
+
+}
+
+@media(max-width:767px){
+
+    section{
+        padding:var(--section-space-sm) 0;
+    }
+    .container {
+    width: 100%;
+   
+}
+
+}

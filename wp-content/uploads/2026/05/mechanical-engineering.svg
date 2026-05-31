@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Mechanical Engineering</title>
+  <desc id="desc">Original line icon showing a gear and wrench.</desc>
+  <path d="M48 18l5.2 8.1 9.4-2.1 2.3 9.4 9 3.5-3.7 8.9 5.4 8-8.1 5.2 2.1 9.4-9.4 2.3-3.5 9-8.9-3.7-8 5.4-5.2-8.1-9.4 2.1-2.3-9.4-9-3.5 3.7-8.9-5.4-8 8.1-5.2-2.1-9.4 9.4-2.3 3.5-9 8.9 3.7L48 18Z" stroke="#0d6efd" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="48" cy="48" r="13" stroke="#0b1220" stroke-width="4"/>
+  <path d="M64.5 21.5 73 30l-9.8 9.8c1.1 2.6 1.4 5.4.9 8.2L39.2 72.9c-2.7 2.7-7.1 2.7-9.8 0s-2.7-7.1 0-9.8L54.3 38.2c2.8-.5 5.6-.2 8.2.9l9.8-9.8" stroke="#0b1220" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34.2 68.2h.1" stroke="#0d6efd" stroke-width="6" stroke-linecap="round"/>
+</svg>

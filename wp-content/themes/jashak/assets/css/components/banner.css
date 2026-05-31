@@ -1,0 +1,145 @@
+/* ==================================================
+INNER BANNER
+================================================== */
+
+.inner-banner{
+	position:relative;
+	height:420px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+}
+
+.inner-banner-image{
+	position:absolute;
+	inset:0;
+}
+
+.inner-banner-image img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.inner-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(7 31 65 / 70%);
+}
+
+.inner-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.inner-banner-content h1{
+	color:#fff;
+	font-size:58px;
+	font-weight:700;
+	margin:0;
+}
+
+/* ==================================================
+BREADCRUMB
+================================================== */
+
+.breadcrumb-wrap{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:12px;
+	margin-top:18px;
+	flex-wrap:wrap;
+}
+
+.breadcrumb-wrap a{
+	color:#fff;
+	font-size:15px;
+	font-weight:500;
+	text-decoration:none;
+	opacity:.85;
+	transition:.3s ease;
+}
+
+.breadcrumb-wrap a:hover{
+	color:var(--primary-color);
+	opacity:1;
+}
+
+.breadcrumb-separator{
+	color:#fff;
+	opacity:.6;
+}
+
+.current-page{
+	color:var(--primary-color);
+	font-size:15px;
+	font-weight:600;
+}
+
+/* ==================================================
+SECTION
+================================================== */
+
+.sec-pad {
+    padding: 100px 0px 0px 0px;
+}
+
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media(max-width:991px){
+
+	.inner-banner{
+		height:320px;
+	}
+
+	.inner-banner-content h1{
+		font-size:42px;
+	}
+
+	.inner-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 40px;
+}
+}
+
+@media(max-width:767px){
+
+	.sec-pad{
+		padding:70px 0;
+	}
+
+	.inner-banner{
+		height:260px;
+	}
+
+	.inner-banner-content h1{
+		font-size:32px;
+	}
+
+	.breadcrumb-wrap{
+		gap:8px;
+		margin-top:12px;
+	}
+
+	.breadcrumb-wrap a,
+	.current-page{
+		font-size:14px;
+	}
+
+	.inner-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+}

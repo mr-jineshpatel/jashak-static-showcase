@@ -1,0 +1,271 @@
+/* ==================================================
+GLOBAL BUTTON SYSTEM
+================================================== */
+
+.quote-btn,
+.theme-btn{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    overflow:hidden;
+
+    border:none;
+    outline:none;
+
+    cursor:pointer;
+
+    text-align:center;
+    text-decoration:none !important;
+
+    transition:var(--transition);
+
+    min-height:54px;
+    padding:14px 30px;
+
+    border-radius:60px;
+
+    font-size:14px;
+    font-weight:600;
+    line-height:1;
+
+    z-index:1;
+}
+
+/* ==================================================
+PRIMARY BUTTON
+================================================== */
+
+.quote-btn,
+.theme-btn,
+.theme-btn-primary{
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--primary-dark)
+    );
+
+    color:var(--white-color);
+}
+
+/* ==================================================
+SECONDARY BUTTON
+================================================== */
+
+.theme-btn-secondary{
+    background:var(--secondary-color);
+    color:var(--white-color);
+}
+
+/* ==================================================
+OUTLINE BUTTON
+================================================== */
+
+.theme-btn-outline{
+    border:1px solid var(--border-color);
+    background:transparent;
+    color:var(--heading-color);
+}
+
+/* ==================================================
+LIGHT BUTTON
+================================================== */
+
+.theme-btn-light{
+    background:var(--white-color);
+    color:var(--heading-color);
+}
+
+/* ==================================================
+GLASS BUTTON
+================================================== */
+
+.theme-btn-glass{
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    color:var(--white-color);
+}
+
+/* ==================================================
+BUTTON HOVER
+================================================== */
+
+.quote-btn:hover,
+.theme-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ==================================================
+PRIMARY HOVER
+================================================== */
+
+.quote-btn:hover,
+.theme-btn:hover,
+.theme-btn-primary:hover{
+    color:var(--white-color);
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-dark),
+        var(--primary-color)
+    );
+
+    box-shadow:0 14px 28px rgba(13,110,253,.28);
+}
+
+/* ==================================================
+SECONDARY HOVER
+================================================== */
+
+.theme-btn-secondary:hover{
+    background:var(--primary-color);
+    color:var(--white-color);
+}
+
+/* ==================================================
+OUTLINE HOVER
+================================================== */
+
+.theme-btn-outline:hover{
+    background:var(--primary-color);
+    border-color:var(--primary-color);
+    color:var(--white-color);
+}
+
+/* ==================================================
+LIGHT HOVER
+================================================== */
+
+.theme-btn-light:hover{
+    background:var(--primary-color);
+    color:var(--white-color);
+}
+
+/* ==================================================
+GLASS HOVER
+================================================== */
+
+.theme-btn-glass:hover{
+    background:rgba(255,255,255,.18);
+    color:var(--white-color);
+}
+
+/* ==================================================
+WATER SHINE EFFECT
+================================================== */
+
+.quote-btn::before,
+.theme-btn::before{
+    content:"";
+    position:absolute;
+    top:-120%;
+    left:-80%;
+    width:60%;
+    height:320%;
+    background:rgba(255,255,255,.16);
+    transform:rotate(25deg);
+    transition:.7s ease;
+    z-index:-1;
+}
+
+/* ==================================================
+MOVE SHINE
+================================================== */
+
+.quote-btn:hover::before,
+.theme-btn:hover::before{
+    left:120%;
+}
+
+/* ==================================================
+GLOW EFFECT
+================================================== */
+
+.quote-btn::after,
+.theme-btn::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+
+    background:linear-gradient(
+        120deg,
+        rgba(255,255,255,.14),
+        rgba(255,255,255,0)
+    );
+
+    opacity:.6;
+
+    z-index:-1;
+}
+
+/* ==================================================
+ACTIVE EFFECT
+================================================== */
+
+.quote-btn:active,
+.theme-btn:active{
+    transform:scale(.97);
+}
+
+/* ==================================================
+SMALL BUTTON
+================================================== */
+
+.theme-btn-sm{
+    min-height:44px;
+    padding:10px 22px;
+    font-size:13px;
+}
+
+/* ==================================================
+LARGE BUTTON
+================================================== */
+
+.theme-btn-lg{
+    min-height:60px;
+    padding:18px 36px;
+    font-size:15px;
+}
+
+/* ==================================================
+FULL WIDTH BUTTON
+================================================== */
+
+.theme-btn-block{
+    width:100%;
+}
+
+/* ==================================================
+ICON BUTTON
+================================================== */
+
+.theme-btn-icon{
+    gap:8px;
+}
+
+/* ==================================================
+RESPONSIVE
+================================================== */
+
+@media(max-width:767px){
+
+    .quote-btn,
+    .theme-btn{
+        min-height:50px;
+        padding:12px 24px;
+        font-size:13px;
+    }
+
+    .theme-btn-lg{
+        min-height:54px;
+        padding:14px 28px;
+    }
+
+}

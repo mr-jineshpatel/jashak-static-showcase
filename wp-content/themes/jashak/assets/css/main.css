@@ -1,0 +1,44 @@
+/*==================================================
+BASE
+==================================================*/
+
+@import url("base/reset.css");
+@import url("base/variables.css");
+@import url("base/fonts.css");
+@import url("base/global.css");
+@import url("base/typography.css");
+
+/*==================================================
+LAYOUT
+==================================================*/
+
+@import url("layout/header.css");
+@import url("layout/footer.css");
+@import url("layout/blog.css");
+
+/*==================================================
+COMPONENTS
+==================================================*/
+
+@import url("components/buttons.css");
+@import url("components/banner.css");
+@import url("components/image-content.css");
+@import url("components/choose-section.css");
+@import url("components/project-faq.css");
+@import url("components/cta-section.css");
+@import url("components/blog-section.css");
+@import url("components/company-logo.css");
+@import url("components/forms.css");
+@import url("components/slider.css");
+@import url("components/cards.css");
+@import url("components/testimonial.css");
+
+
+/*==================================================
+PAGES
+==================================================*/
+
+@import url("pages/about.css");
+@import url("pages/contact.css");
+@import url("pages/project-detail.css");
+@import url("pages/industry-pages.css");

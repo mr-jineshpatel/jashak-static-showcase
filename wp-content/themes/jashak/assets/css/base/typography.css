@@ -1,0 +1,303 @@
+/*==================================================
+BODY
+==================================================*/
+
+body{
+    font-family:var(--body-font);
+
+    font-size:var(--fs-16);
+
+    font-weight:var(--fw-400);
+
+    line-height:var(--lh-body);
+
+    color:var(--text-color);
+
+    background:var(--white-color);
+
+    overflow-x:hidden;
+}
+
+
+/*==================================================
+HEADINGS
+==================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:var(--heading-font);
+
+    color:var(--heading-color);
+
+    font-weight:var(--fw-700);
+
+    line-height:var(--lh-heading);
+
+    letter-spacing:-0.5px;
+
+    margin:0 0 20px;
+}
+
+h1{
+    font-size:var(--fs-72);
+}
+
+h2{
+    font-size:var(--fs-54);
+}
+
+h3{
+    font-size:var(--fs-40);
+}
+
+h4{
+    font-size:var(--fs-30);
+}
+
+h5{
+    font-size:var(--fs-24);
+}
+
+h6{
+    font-size:var(--fs-20);
+}
+
+
+/*==================================================
+PARAGRAPH
+==================================================*/
+
+p{
+    margin:0 0 20px;
+
+    font-size:var(--fs-16);
+
+    font-weight:var(--fw-400);
+
+    line-height:var(--lh-paragraph);
+
+    color:var(--text-color);
+}
+
+
+/*==================================================
+LINKS
+==================================================*/
+
+a{
+    transition:var(--transition);
+}
+
+a:hover{
+    color:var(--primary-color);
+    text-decoration: none !important;
+}
+
+
+/*==================================================
+BUTTON TYPOGRAPHY
+==================================================*/
+
+button,
+input,
+textarea,
+select{
+    font-family:var(--body-font);
+}
+
+
+/*==================================================
+SECTION TITLE
+==================================================*/
+
+.section-subtitle{
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    color:var(--primary-color);
+
+    font-size:15px;
+
+    font-weight:var(--fw-600);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+}
+
+.section-title{
+    margin-bottom:25px;
+
+    color:var(--heading-color);
+
+    font-size:52px;
+
+    font-weight:var(--fw-700);
+
+    line-height:1.15;
+}
+
+.section-title span{
+    color:var(--primary-color);
+}
+
+.section-text{
+    font-size:var(--fs-16);
+
+    line-height:1.9;
+
+    color:var(--text-color);
+}
+
+
+/*==================================================
+TEXT UTILITIES
+==================================================*/
+
+.text-white{
+    color:var(--white-color) !important;
+}
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1400px){
+
+    h1{
+        font-size:64px;
+    }
+
+    h2{
+        font-size:48px;
+    }
+
+    h3{
+        font-size:36px;
+    }
+
+}
+
+@media(max-width:1199px){
+
+    h1{
+        font-size:56px;
+    }
+
+    h2{
+        font-size:42px;
+    }
+
+    h3{
+        font-size:32px;
+    }
+
+    h4{
+        font-size:28px;
+    }
+
+    .section-title{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:991px){
+
+    body{
+        font-size:15px;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    h2{
+        font-size:38px;
+    }
+
+    h3{
+        font-size:30px;
+    }
+
+    h4{
+        font-size:26px;
+    }
+
+    h5{
+        font-size:22px;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    h1{
+        font-size:40px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    h3{
+        font-size:28px;
+    }
+
+    h4{
+        font-size:24px;
+    }
+
+    h5{
+        font-size:20px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:575px){
+
+    h1{
+        font-size:34px;
+
+        line-height:1.2;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    h3{
+        font-size:26px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .section-subtitle{
+        font-size:13px;
+    }
+
+}
