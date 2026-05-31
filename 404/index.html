@@ -5,84 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found - Jashak</title>
   <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="../wp-content/themes/jashak/assets/css/vendors/all.min.css">
+  <link rel="stylesheet" href="../wp-content/themes/jashak/assets/css/vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="../wp-content/themes/jashak/assets/css/main.css">
   <style>
-    * {
-      box-sizing: border-box;
+    body { margin: 0; font-family: Arial, sans-serif; }
+    .static-404-hero {
+      min-height: 360px;
+      background: linear-gradient(rgba(5,20,42,.72), rgba(5,20,42,.72)), url("../wp-content/uploads/2026/05/general-banner.png") center/cover no-repeat;
+      color: #fff; display: flex; align-items: center; text-align: center; padding: 80px 0;
     }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #101010;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 24px;
+    .static-404-hero h1 { font-size: 56px; font-weight: 800; margin: 0 0 18px; }
+    .static-404-breadcrumb { display: flex; justify-content: center; gap: 10px; color: #fff; font-weight: 600; font-size: 15px; }
+    .static-404-breadcrumb a { color: #fff; text-decoration: none; }
+    .static-404-breadcrumb span:last-child { color: #0d6efd; }
+    .static-404-stage {
+      min-height: 520px; display: grid; place-items: center; text-align: center; overflow: hidden;
+      background: linear-gradient(90deg, rgba(13,110,253,.055) 1px, transparent 1px),
+                  linear-gradient(rgba(13,110,253,.055) 1px, transparent 1px), #f7fbff;
+      background-size: 36px 36px; padding: 90px 20px; border-bottom: 2px solid #0d6efd;
     }
-
-    .box {
-      max-width: 680px;
+    .static-404-card { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
+    .static-404-card::before {
+      content: ""; position: absolute; left: 50%; top: 50%; width: 440px; height: 440px;
+      transform: translate(-50%, -50%); border: 1px solid rgba(13,110,253,.16); border-radius: 50%; z-index: -1;
     }
-
-    .code {
-      font-size: 96px;
-      font-weight: 800;
-      color: #0d6efd;
-      line-height: 1;
-      margin-bottom: 18px;
+    .static-404-card::after {
+      content: ""; position: absolute; left: 50%; top: 50%; width: 310px; height: 310px;
+      transform: translate(-50%, -50%); border: 1px dashed rgba(13,110,253,.18); border-radius: 50%; z-index: -1;
     }
-
-    h1 {
-      font-size: 36px;
-      line-height: 1.2;
-      margin: 0 0 12px;
+    .static-404-code {
+      font-size: clamp(96px, 16vw, 190px); line-height: .85; font-weight: 900; color: #051a38;
+      text-shadow: 4px 4px 0 rgba(13,110,253,.35), 8px 8px 0 rgba(5,20,42,.1); margin-bottom: 34px;
     }
-
-    p {
-      font-size: 17px;
-      line-height: 1.7;
-      color: #555;
-      margin: 0 0 28px;
+    .static-404-card h2 {
+      font-size: clamp(28px, 4vw, 48px); line-height: 1.15; font-weight: 900; margin: 0 0 18px;
+      color: #101010; text-transform: uppercase;
     }
-
-    a {
-      display: inline-block;
-      background: #0d6efd;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 14px 26px;
-      border-radius: 4px;
+    .static-404-card p { max-width: 640px; margin: 0 auto 30px; color: #6b7280; font-size: 17px; line-height: 1.8; }
+    .static-404-actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .static-404-actions a {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 28px;
+      border-radius: 999px; background: #0d6efd; color: #fff; font-size: 14px; font-weight: 800;
+      text-decoration: none; transition: .2s ease;
     }
-
-    a:hover,
-    a:focus {
-      background: #084fc7;
-    }
-
-    @media (max-width: 575px) {
-      .code {
-        font-size: 72px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      p {
-        font-size: 16px;
-      }
+    .static-404-actions a:nth-child(2) { background: #064db8; }
+    .static-404-actions a:hover, .static-404-actions a:focus { transform: translateY(-2px); color: #fff; }
+    @media (max-width: 767px) {
+      .static-404-hero { min-height: 260px; padding: 60px 0; }
+      .static-404-hero h1 { font-size: 38px; }
+      .static-404-stage { min-height: 470px; padding: 70px 18px; }
+      .static-404-card::before { width: 300px; height: 300px; }
+      .static-404-card::after { width: 220px; height: 220px; }
+      .static-404-actions a { width: 100%; max-width: 260px; }
     }
   </style>
 </head>
 <body>
-  <main class="box">
-    <div class="code">404</div>
-    <h1>Page Not Found</h1>
-    <p>The page you are looking for does not exist or has been moved.</p>
-    <a href="/">Back to Home</a>
+  <section class="static-404-hero">
+    <div class="container">
+      <h1>Page Not Found</h1>
+      <div class="static-404-breadcrumb">
+        <a href="../">Home</a><span>/</span><span>404</span>
+      </div>
+    </div>
+  </section>
+  <main class="static-404-stage">
+    <div class="static-404-card">
+      <div class="static-404-code">404</div>
+      <h2>404 - Oops! This Page Doesn’t Exist</h2>
+      <p>The page you are looking for might have been moved, deleted, or never existed. Please check the URL or go back to the homepage and try again.</p>
+      <div class="static-404-actions">
+        <a href="../">Back To Home</a>
+        <a href="../services/">Check Our Services</a>
+      </div>
+    </div>
   </main>
 </body>
 </html>
